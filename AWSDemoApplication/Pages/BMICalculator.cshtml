@@ -1,0 +1,20 @@
+﻿@page
+@model BMICalculatorModel
+@{}
+
+<h4>The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual.</h>
+<h3>@Model.ResultInfo</h3>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div>
+        <label asp-for="Weight"></label>
+        <input asp-for="Weight" /> kg
+    </div>
+    <div>
+        <label asp-for="Height"></label>
+        <input asp-for="Height" /> cm
+
+    </div>
+    <br />
+    <button>Calculate</button>
+</form>
